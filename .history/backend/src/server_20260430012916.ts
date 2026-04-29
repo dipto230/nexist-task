@@ -11,13 +11,13 @@ dotenv.config();
 const app: Application = express();
 const port = process.env.PORT || 5000;
 
-
+// middleware
 app.use(cors());
 app.use(express.json());
 app.use("/api/products", ProductRoutes);
 app.use("/api/cart", CartRoutes);
 
-
+// route
 app.get("/", (req: Request, res: Response) => {
   res.send("Backend server is running 🚀");
 });

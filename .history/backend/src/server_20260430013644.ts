@@ -17,7 +17,7 @@ app.use(express.json());
 app.use("/api/products", ProductRoutes);
 app.use("/api/cart", CartRoutes);
 
-
+// route
 app.get("/", (req: Request, res: Response) => {
   res.send("Backend server is running 🚀");
 });
