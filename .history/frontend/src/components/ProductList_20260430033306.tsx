@@ -55,7 +55,7 @@ export default function ProductList() {
               key={p.id}
               className="card bg-white p-5 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-1"
             >
-              
+              {/* ✅ SIMPLE IMG (NO ERROR) */}
               <img
                 src={p.image}
                 alt={p.name}

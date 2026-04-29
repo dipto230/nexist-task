@@ -6,6 +6,7 @@ import { addItem } from "@/redux/features/cartSlice";
 import { RootState } from "@/redux/store";
 import toast from "react-hot-toast";
 import gsap from "gsap";
+import Image from "next/image";
 
 export default function ProductList() {
   const [products, setProducts] = useState<any[]>([]);
@@ -55,12 +56,15 @@ export default function ProductList() {
               key={p.id}
               className="card bg-white p-5 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-1"
             >
-              
-              <img
-                src={p.image}
-                alt={p.name}
-                className="w-full h-40 object-cover rounded-lg mb-3"
-              />
+              {/* ✅ Next Image */}
+              <div className="relative w-full h-40 mb-3">
+                <Image
+                  src={p.image}
+                  alt={p.name}
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
 
               <h4 className="text-lg font-semibold">{p.name}</h4>
               <p className="text-gray-500 mb-3">৳ {p.price}</p>
