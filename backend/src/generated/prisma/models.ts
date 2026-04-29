@@ -8,6 +8,6 @@
  *
  * 🟢 You can import this file directly.
  */
-export type * from './models/Product.ts'
-export type * from './models/CartItem.ts'
-export type * from './commonInputTypes.ts'
+export type * from './models/Product'
+export type * from './models/CartItem'
+export type * from './commonInputTypes'
