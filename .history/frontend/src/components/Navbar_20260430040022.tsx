@@ -35,7 +35,7 @@ export default function Navbar() {
         onClick={() => router.push("/cart")}
         className="relative flex items-center gap-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 active:scale-95 transition"
       >
-       Cart
+     Cart
 
         
         {cartItems.length > 0 && (
