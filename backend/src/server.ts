@@ -19,7 +19,7 @@ app.use("/api/cart", CartRoutes);
 
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Backend server is running 🚀");
+  res.send("Backend server is running ");
 });
 
 app.listen(port, () => {

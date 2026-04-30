@@ -40,3 +40,4 @@ coverage/
 # misc
 .tmp/
 .cache/
+.vercel

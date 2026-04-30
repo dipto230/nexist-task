@@ -50,7 +50,7 @@ export const getCartItems = async (req: Request, res: Response) => {
 
 
 export const removeCartItem = async (req: Request, res: Response) => {
-  const { id } = req.params;
+  const id = req.params.id as string;
 
   await prisma.cartItem.delete({
     where: { id },
