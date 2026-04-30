@@ -14,11 +14,7 @@ The main goal of this project was to solve real-world support issues such as:
 
 ---
 
-## GitHub Repository
 
-Add your repository link here:
-
-https://github.com/yourusername/your-repository-name
 
 ---
 
